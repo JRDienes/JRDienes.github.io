@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
 include:
-  - '_pages'
+  - '_posts'
 
 # Sets up a new collection which is not posted as a blog
 collections:
