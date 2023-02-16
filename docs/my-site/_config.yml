@@ -32,7 +32,27 @@ github_username:  JRDienes
 theme: minima
 plugins:
   - jekyll-feed
+include:
+  - '_pages'
 
+# Sets up a new collection which is not posted as a blog
+collections:
+  research_posts:
+    output: true
+    hidden: true
+    permalink: /:collection/:name
+
+
+# This allows us to more easily link to other pages:
+relative_permalinks: false
+
+# Always use plugins instead of gems here
+plugins:
+  - jekyll-relative-links
+  
+# This dictates what goes in the top navbar:
+header_pages:
+- 'PSET_3.markdown'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
